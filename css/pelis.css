@@ -1,0 +1,165 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    color: white;
+}
+.titIngresoWeb{
+    background-color: rgb(0, 0, 82);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 120px;
+}
+.titIngresoWeb>h1{
+    justify-content: center;
+    text-align: center;
+}
+.queSomosP{
+    text-align: center;
+    background-color: rgba(0, 0, 15, 0.815);
+    padding: 10px;
+}
+.headerPrincipal{
+    background-color: rgb(0, 0, 82);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-rule-color: rgb(0, 0, 82);
+    padding: 10px;
+}
+.headerPrincipalRepartos{
+    background-color: rgb(0, 0, 82);
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.titRepartos{
+    text-align: center;
+}
+.footer{
+    background-color: rgb(0, 0, 82);
+    text-align: center;
+    padding: 35px;
+    font-size: 25px;
+    margin-top: 0px;
+}
+#LogoPrincipal{
+    animation-name: animacionLogo;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacionLogo{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.iframes{
+    width: 560px;
+    height: 315px;
+}
+.contenedorDeIMG{
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.contenedor-fotos-nombres{
+    background-color: rgba(0, 0, 15, 0.815);
+    text-align: center;
+    padding-top: 10px;
+}
+#contenedorPelis{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 5px;
+    column-gap: 10px;
+    background-color: black;
+    padding: 10px;
+}
+#contenedorFondoPantalla{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+.formularioIngreso{
+    background-color: black;
+    padding: 10px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+.item-grid{
+    border:  solid white 2px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 82, 0.363);
+    justify-content: center;
+    padding: 10px;
+}
+.item-grid img{
+    width: auto;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+}
+
+@media screen and (max-width:1280px) {
+    #contenedorPelis{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:750px) {
+    #contenedorPelis{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width:490px) {
+    #contenedorPelis{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .headerPrincipal{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:625px) {
+    .contenedorDeIMG{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .iframes{
+        width: 330px;
+    }
+}
+.alert{
+    background-color: rgba(255, 45, 45, 0.384);
+    color: red;
+    padding: 10px;
+}
+.hide{
+    display: none;
+}
+#btnIngreso{
+    color: black;
+}
+.inputText{
+    color: black;
+}
+.item-grid:hover{
+    background-color: blueviolet;
+}
